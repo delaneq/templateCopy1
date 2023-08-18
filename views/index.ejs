@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiteCAR</title>
+    <script src="https://kit.fontawesome.com/f1ac3e90b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/style/style.css">
+</head>
+<body>
+        <!-- BLOCK: HEADER(MENU) -->
+        <div class="bgr">
+            <header>
+                <img class="logo" src="https://www.zrthemes.com/demoz/kar-v2/assets/images/logo.png" alt="">
+                <ul id="header-menu" class="menu">
+                    <li><a href="" class="current">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Review</a></li>
+                    <li><button class="red-btn" id="red-btn" onclick="openModal()">Book Appointment</button></li>
+                    <li><a href="">Contact</a></li>
+                </ul> 
+                <div id="menu-btn" class="burger-menu">
+                    <div id="menu-btn--burger"></div>
+                </div>
+            </header>
+            
+            <div id="modal-bg" class="modal-bg" onclick="closeModal(event)">
+                <div id="modal" class="modal">
+                    <h1>Leave a Request</h1>
+                    <form>
+                        <input type="text" placeholder="Your Name" id="form-Name">
+                        <input type="text" placeholder="Your Email" id="form-Email">
+                        <input type="tel" id="form-Tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+7 xxx xxx xxxx">
+                            <button class="form-Btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="header info" id="main">
+                <h5 id="main-info" class="main-info"></h5>
+                <h1>Service and Repair</h1>
+                <p>Lorem ipsum</p>
+                <h4>Phone: 123 456 789</h4>
+                <button class="red-btn">Contact Us</button>
+            </div>
+        </div>
+        <br>
+        <!-- BLOCK: SERVICES -->
+        <!-- <div class="services">
+            <h2>OUR SERVICES</h2>
+            
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+            <div class="srv">
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/icons/oil.svg" alt="">
+                    <h2>OIL CHANGES</h2>
+                    <p>Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/icons/brakes.svg" alt="">
+                    <h2>ABS BRAKES</h2>
+                    <p>Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/icons/transmission.svg" alt="">
+                    <h2>TRANSMISSION SERVICE</h2>
+                    <p>Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/icons/tire.svg" alt="">
+                    <h2>TIRES & WHEELS</h2>
+                    <p>Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/icons/carwash.svg" alt="">
+                    <h2>WASH AND CLEAN</h2>
+                    <p>Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/icons/engine.svg" alt="">
+                    <h2>ENGINE PERFORMANCE</h2>
+                    <p>Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+            </div>
+            
+        </div> -->
+        <!-- BLOCK: PRODUCTS -->
+        <!-- <div class="products">
+            <div class="title"><h2>OUR PRODUCTS</h2></div>
+            <div class="subtitle"><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p></div>
+            <div class="cards" id="cards-container">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                    &#8250;
+                </button>
+                <div class="cards-container">
+                    <div class="items">
+                        <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/store/product-4.jpg" alt="">
+                        <div class="content">
+                            <div class="content-title"><h3>Leather Pushes</h3></div>
+                            <span class="content-price"><h3>120$</h3></span>
+                            <p>Order Leathar Leather Pushes for interior Designs for your cars</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/store/product-1.jpg" alt="">
+                        <div class="content">
+                            <div class="content-title"><h3>Leather Stearing</h3></div>
+                            <span class="content-price"><h3>120$</h3></span>
+                            <p>Make your car beautifull with Leather stearing wheel cover</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/store/product-2.jpg" alt="">
+                        <div class="content">
+                            <div class="content-title"><h3>Doors and Paint</h3></div>
+                            <span class="content-price"><h3>120$</h3></span>
+                            <p>Order Any color paint for your doors or you can buy new doors</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="" alt="">
+                        <div class="content">
+                            <div class="content-title"><h3>Leather Pushes</h3></div>
+                            <span class="content-price"><h3>120$</h3></span>
+                            <p>Order Leathar Leather Pushes for interior Designs for your cars</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div> -->
+        <!-- BLOCK: PACKAGES -->
+        <!-- <div class="packages">
+            <div class="ttl">
+                <div class="title"><h2>SERVICE PACKAGES</h2></div>
+                <div class="subtitle"><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p></div>
+            </div>
+            
+            <div class="cards">
+                <div class="item">
+                    <div class="title"><h4>FREE SERVICES</h4></div>
+                    <div class="content"><ul>
+                        <li>Wiper Blade Installation</li>
+                        <li>Check Engine Light Code Retrieval</li>
+                        <li>Air Filter Replacement Installation</li>
+                        <li>Starting and Charging System Evaluation</li>
+                    </ul>
+                    </div>
+                    <div class="pricee">
+                        <h2>25$</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title"><h4>HOME WASH SERVICES</h4></div>
+                    <div class="content">
+                        <ul>
+                            <li>Spring Maintenance Package</li>
+                            <li>Summer Maintenance Package</li>
+                            <li>Winter Maintenance Package</li>
+                            <li>Smoke Test Diagnostic Service</li>
+                        </ul>
+                    </div>
+                    <div class="pricee">
+                        <h2>25$</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title"><h4>FLUID SERVICES</h4></div>
+                    <div class="content">
+                        <ul>
+                            <li>Engine Flush Service</li>
+                            <li>Transmission Fluid Service</li>
+                            <li>Brake Fluid Exchange</li>
+                            <li>Coolant Drain and Fill</li>
+                            <li>Power Steering Flush</li>
+                        </ul>
+                    </div>
+                    <div class="pricee">
+                        <h2>25$</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title"><h4>SYSTEM EVALUATIONS</h4></div>
+                    <div class="content">
+                        <ul>
+                            <li>A/C System Leak Evaluation</li>
+                            <li>Steering and Suspension System Evaluation</li>
+                            <li>Coolant System Evaluation</li>
+                            <li>Cranks No Start Diagnostic Service</li>
+                            <li>2nd A/C System Reapir Evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="pricee">
+                        <h2>25$</h2>
+                    </div>
+                </div>
+                <div class="item"><div class="title"><h4>MAINTENANCE SERVICES</h4></div>
+                <div class="content">
+                    <ul>
+                        <li>Headlight Restoration</li>
+                        <li>Small Bulb Installation</li>
+                        <li>Cabin Air Filter Install</li>
+                        <li>Spring Maintenance Package</li>
+                    </ul>
+                    </div>
+                    <div class="pricee">
+                        <h2>25$</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title"><h4>TUNE UPS</h4></div>
+                    <div class="content">
+                        <ul>
+                            <li>Small Bulb Installation</li>
+                            <li>Cranks No Start Diagnostic Service</li>
+                            <li>Engine Cooling System Check</li>
+                            <li>Headlight Restoration</li>
+                        </ul>
+                    <div class="pricee">
+                        <h2>25$</h2>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div> -->
+        <!-- BLOCK: GALLERY -->
+        <div class="gallery">
+            <div class="ttl">
+                <h2>OUR GALLERY</h2>
+                <p>We Have Best Car Images Collections</p>
+            </div>
+            <div class="btns">
+                <button>All</button>
+                <button>Repairing</button>
+                <button>Car wash</button>
+                <button>Paint</button>
+                <button>New</button>
+            </div>
+            <div class="photos">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="bottom-btn">
+                <button>View Gallery</button>
+            </div>
+        </div>
+        <!-- BLOCK: TESTIMONALS -->
+        <!-- <div class="testimonals">
+            <div class="ttl">
+                <h2>TESTIMONALS</h2>
+                <p>People Love Us</p>
+            </div>
+            <div class="comment">
+                <div class="comment-header">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/clients/testimonial-3.jpg" alt="">
+                </div>
+                <div class="comment-text">
+                    
+                    <p>Great Support, I would just like to say thank you for your prompt and effective service, for your friendly and professional support staff! I will recommend your expert company to all my friends.
+                        <i class="fa fa-quote-left qleft" aria-hidden="true"></i>
+                        <i class="fa fa-quote-right qright" aria-hidden="true"></i>
+                    </p>
+                    
+                </div>
+                <div class="comment-footer">
+                    <p>William Hoy</p>
+                    <div class="stars">
+                        <img src="./img/star-icon.svg" alt="">
+                        <img src="./img/star-icon.svg" alt="">
+                        <img src="./img/star-icon.svg" alt="">
+                        <img src="./img/star-icon.svg" alt="">
+                        <img src="./img/star-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- BLOCK: BLOG -->
+        <!-- <div class="blog">
+            <div class="ttl">
+                <h2>OUR BLOG</h2>
+                <p>Read Our Latest News</p>
+            </div>
+            <div class="cards">
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/news/blog-1.jpg" alt="">
+                    <div class="text">
+                        <p>Which oil make our car performance better?</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/news/blog-2.jpg" alt="">
+                    <div class="text">
+                        <p>How we make our car cool and clean?</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.zrthemes.com/demoz/kar-v2/assets/images/news/blog-3.jpg" alt="">
+                    <div class="text">
+                        <p>After how much time need to change Oil Filter?</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="bottom-btn">
+                <button>View More Blog</button>
+            </div>
+        </div> -->
+        <!-- BLOCK: 247 -->
+        <!-- <div class="free-services">
+            <div class="content">
+                <div class="content-in">
+                    <div class="ttl">
+                        <h2>24/7 FREE SERVICES</h2>
+                        <p>We Are Committed To Providing Our Customers With Quality Repairs At A Fair Price.</p>
+                    </div>
+                    <button>Schedule an Appointment</button>
+                </div>
+                
+            </div>
+            
+        </div> -->
+        <!-- BLOCK: INPUT -->
+        <!-- <div class="input">
+            <div class="ttl">
+                <h2>CONTACT US</h2>
+                <p>Get In Touch With Us 24/7</p>
+            </div>
+            <div class="container-input">
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Name*" class="fname">
+                    <input type="text" id="email" name="email" placeholder="Email*" class="email">
+                </div>
+                <div class="sbject">
+                    <input type="text" name="Subject" id="subject" placeholder="Subject" class="subject">
+                </div>
+                <div class="wmessage">
+                    <textarea name="writemessage" id="write-message" cols="30" rows="10" class="message">Write Your Message*</textarea>
+                </div>
+                <button>Send Message</button>
+            </div>
+        </div> -->
+        <!-- BLOCK: FOOTER -->
+        <!-- <footer> 
+            <div class="content">
+                <div class="content-top-top">
+                    <div class="content-top">
+                        <div class="first-column">
+                            <h1>Kar - Car Wash</h1>
+                            <p>At Kar - Car Wash, lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus eu orci ut imperdiet. Suspendisse convallis dui diam</p>
+                            <div class="icons">
+                                <a href=""><img src="./img/facebook-icon.svg" alt=""></a>
+                                <a href=""><img src="./img/twitter-icon.svg" alt=""></a>
+                                <a href=""><img src="./img/google-icon.svg" alt=""></a>
+                            </div>
+                            
+                            
+                        </div>
+                     
+                        
+                        <div class="snd-column"> 
+                            <h4>Useful Links</h4>
+                            <div class="columns"> 
+                                <div class="firstcolumn">
+                                    <ul>
+                                        <li> <a href="">Home</a></li>
+                                        <li> <a href="">Services</a></li>
+                                        <li><a href="">Contact</a></li>
+                                        <li><a href="">Our Reviews</a></li>
+                                        <li> <a href="">FAQs</a></li>
+                                        <li><a href="">Our Team</a></li>
+                                    </ul>
+                                   
+                                </div>
+                                <div class="secondcolumn">
+                                    <ul>
+                                        <li><a href="">About</a></li>
+                                        <li><a href="">Portfolio</a></li>
+                                        <li><a href="">Our Team</a></li>
+                                        <li><a href="">Our Partners</a></li>
+                                        <li><a href="">Our News</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                    </ul>                             
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thrd-column">
+                            <h2>Contact:</h2>
+                            <div class="adress">
+                                <h3>Address: </h3>
+                                <p>11 West Town, PBo 12345, United States</p>
+                                <a href="">Get Directions</a>
+                            </div>
+                            <div class="phone">
+                                <h3>Phone: </h3>
+                                <p> +1 1234 56 789</p>
+                                <p>+1 1234 56 780</p>
+                            </div>
+                            <div class="email">
+                                <h3>Email: </h3>
+                                <p class="st">info@example.com</p>
+                                <p class="nd">email@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                <div class="content-bottom-bottom">
+                    <div class="first-column-bottom">
+                        <h3>Newsletter</h3>
+                        <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        <div class="inputs">
+                            <input type="Email Adress" placeholder="Email Adress" class="email-input">
+                            <button class="email-input-button"><img src="./img/telegram-icon.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-bottom">
+                    <h3>Kar - Car Wash (COPY) © 2023 - Designed by Miras.</h3>
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+            </div>        
+        </footer> -->
+        <script src="./js/script.js"></script>
+        <script src="./js/menu.js"></script>
+        <script src="./js/slider.js"></script>
+</body>
+</html>
